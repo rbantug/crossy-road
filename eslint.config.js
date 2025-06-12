@@ -1,9 +1,10 @@
-import js from "@eslint/js";
-import globals from "globals";
-import json from "@eslint/json";
 import css from "@eslint/css";
+import js from "@eslint/js";
+import json from "@eslint/json";
 import { defineConfig } from "eslint/config";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
+import simpleImportSort from "eslint-plugin-simple-import-sort"
+import globals from "globals";
 
 export default defineConfig([
   {
@@ -27,5 +28,14 @@ export default defineConfig([
     language: "css/css",
     extends: ["css/recommended"],
   },
-  eslintConfigPrettier
+  eslintConfigPrettier,
+  {
+    plugins: {
+      "simple-import-sort": simpleImportSort
+    },
+    rules: {
+      "simple-import-sort/imports": "error",
+      "simple-import-sort/exports": "error",
+    }
+  }
 ]);
