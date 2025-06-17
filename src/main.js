@@ -21,6 +21,15 @@ scene.add(map)
 
 const camera = Camera();
 
+// helpers
+const axis = new THREE.AxesHelper(50)
+axis.position.z = 60
+axis.position.y = 50
+const gridHelper = new THREE.GridHelper(500, 20)
+gridHelper.rotation.x = 3.1416 / 2
+scene.add(axis)
+scene.add(gridHelper)
+
 function initGame() {
     initMap()
 }
@@ -30,4 +39,4 @@ initGame()
 const renderer = Renderer();
 renderer.render(scene, camera);
 
-// 17:01
+// 20:20
