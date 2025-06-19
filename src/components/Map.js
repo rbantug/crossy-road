@@ -71,6 +71,7 @@ function addRows() {
           data.direction,
           vehicle.color,
         );
+        vehicle.ref = car
         row.add(car);
       });
       map.add(row);
@@ -85,6 +86,7 @@ function addRows() {
           data.direction,
           vehicle.color,
         );
+        vehicle.ref = truck
         row.add(truck);
       });
       map.add(row);
