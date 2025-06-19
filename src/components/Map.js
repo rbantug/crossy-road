@@ -1,10 +1,10 @@
 import * as THREE from "three";
 
-import { Car } from "./Car.js";
-import { Grass } from "./Grass.js";
-import { Road } from "./Road.js";
-import { Tree } from "./Tree.js";
-import { Truck } from "./Truck.js";
+import { Car } from "./resources/Car.js";
+import { Grass } from "./resources/Grass.js";
+import { Road } from "./resources/Road.js";
+import { Tree } from "./resources/Tree.js";
+import { Truck } from "./resources/Truck.js";
 
 const metadata = [
   {
