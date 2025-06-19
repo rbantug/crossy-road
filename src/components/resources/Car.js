@@ -17,6 +17,7 @@ export function Car(initialTileIndex, direction, color) {
   );
 
   carBody.position.z = 10;
+  carBody.castShadow = true
   car.add(carBody);
 
   const carWindshield = new THREE.Mesh(
@@ -29,6 +30,7 @@ export function Car(initialTileIndex, direction, color) {
 
   carWindshield.position.z = 25;
   carWindshield.position.x = -5;
+  carWindshield.castShadow = true
   car.add(carWindshield);
 
   const frontTire = Wheel(18);

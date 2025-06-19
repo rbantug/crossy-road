@@ -9,6 +9,7 @@ export function Player() {
         })
     )
     body.position.z = 10
+    body.castShadow = true
 
     return body
 }

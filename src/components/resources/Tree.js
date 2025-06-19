@@ -17,6 +17,8 @@ function Tree(tileIndex, height) {
 
   trunk.position.z = 10;
   leaves.position.z = height / 2 + 20;
+  trunk.castShadow = true
+  leaves.castShadow = true
   tree.add(trunk);
   tree.add(leaves);
   tree.castShadow = true;
