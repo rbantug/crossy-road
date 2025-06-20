@@ -18,7 +18,7 @@ const metadata = [
   {
     type: "car",
     direction: false, // the cars are moving right to left
-    speed: 1, // how fast the cars are moving per second
+    speed: 100, // how fast the cars are moving per second
     vehicles: [{ initialTileIndex: 2, color: 0xff0000 }],
   },
   {
@@ -32,7 +32,7 @@ const metadata = [
   {
     type: "truck",
     direction: true,
-    speed: 1,
+    speed: 200,
     vehicles: [{ initialTileIndex: -4, color: 0x00ff00 }],
   },
 ];
