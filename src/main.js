@@ -1,12 +1,14 @@
 import "./style.css";
+import "./collectUserInput.js"
 
 import * as THREE from "three";
 
+import { animatePlayer } from "./AnimatePlayer.js";
 import { animateVehicles } from "./AnimateVehicles";
 import { Camera } from "./components/Camera";
 import { DirectionalLight } from "./components/DirectionalLight";
 import { initMap, map } from "./components/Map";
-import { Player } from "./components/Player";
+import { player } from "./components/Player";
 import { Renderer } from "./components/Renderer";
 
 const scene = new THREE.Scene();
@@ -16,7 +18,6 @@ scene.add(ambientLight);
 const dirLight = DirectionalLight();
 scene.add(dirLight);
 
-const player = Player();
 scene.add(player);
 
 scene.add(map);
@@ -45,4 +46,4 @@ function animate() {
   renderer.render(scene, camera);
 }
 
-// 28:52
+// 33:38

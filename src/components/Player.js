@@ -14,6 +14,8 @@ function Player() {
     return body
 }
 
+const player = Player()
+
 const position = {
     currentRow: 0,
     currentTile: 0
@@ -35,7 +37,9 @@ function stepCompleted() {
 }
 
 export {
-    Player,
+    movesQueue,
+    player,
+    position,
     queueMove,
     stepCompleted
 }
