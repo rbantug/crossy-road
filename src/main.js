@@ -43,6 +43,7 @@ const renderer = Renderer();
 renderer.setAnimationLoop(animate);
 function animate() {
   animateVehicles();
+  animatePlayer()
   renderer.render(scene, camera);
 }
 
